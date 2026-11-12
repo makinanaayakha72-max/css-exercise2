@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-< lang="en">
+<htmllang="en">
 <head>
   <meta charest="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -84,73 +84,73 @@
   <span class="tag">Potraits</span>
   <p class="card-desc">An unposed moment caught between frames.</p>
 </div>
+</figure class="card" data-category="portraits">
+ <img src="" alt="Portrait in profile against a plain bakground" loading="lazy">
+ <div class="card-overlay">
+  <h2 class="card-title">Profile Study</h2>
+  <span class="tag">Portraits</span>
+  <p class="card-desc">A simple profile study against a neutral backdrop.</p> </div>
+</figure>
+<figure class="card" data-category="architect">
+  <img src="" alt="Modern building facade with repeating windows" loading="lazy">
+  <div class="card-overlay">
+    <h2 class="card-title">Repeat Pattern</h2>
+    <span class="tag">Architecture</span>
+    <p class="card-desc">A grid of windows turned into an accidental pattern.</p>
+</div>
+</figure>
+<figure class="card" data-category="architecture">
+  <img src="" alt="Glass skyscraper reflecting the sky" loading="lazy">
+  <div class="card-overlay">
+    <h2 class="card-title">Glass Tower</h2>
+    <span class="tag">Architecture</span>
+    <p class="card-desc">Curtain-wall glazing mirroring the clouds above.</p>
+</div>
+</figure>
+
+<figure class="card" data-category="architecture">
+  <img src="" alt="Old stone building with arched doorways" loading="lazy">
+  <div class="card-overlay">
+    <h2 class="card-title">Stone Arches</h2>
+    <span class="tag">Architecture</span>
+    <p class="card-desc">Weathered masonry and deep arches in an old quarter.</p>
+</div>
+</figure>
+
+<figure class="card" data-category="architecture">
+  <img src="" alt="Concrete staircase with strong shadows" loading="lazy">
+  <div class="card-overlay">
+    <h2 class="card-title">Hard Shadows</h2>
+    <span class="tag">Architecture</span>
+    <p class="card-desc">Brutalist concrete and the geometry of midday sun.</p>
+  </div>
 </figure>
 </main>
+
+<script>
+    const buttons = document.querySelectorAll('.filter-btn');
+    const cards = document.querySelectorAll('.card');
+
+    buttons.forEach(btn => {
+      btn.addEventListener('click', () => {
+        buttons.forEach(b => b.classList.remove('active'));
+        btn.classList.add('active');
+
+        const filter = btn.dataset.filter;
+
+        cards.forEach(card => {
+          const match = filter === 'all' || card.dataset.category === filter;
+          card.classList.toggle('is-hidden', !match);
+        });
+      });
+    });
+  </script>
 
 
 
 
 
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
